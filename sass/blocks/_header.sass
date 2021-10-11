@@ -1,0 +1,73 @@
+.header
+  padding-top: 12px
+  padding-bottom: 13px
+  background-color: $section-color
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__logo
+    max-width: 160px
+    height: 55px
+
+.navbar
+  &-menu
+    display: flex
+    &__link
+      font-weight: normal
+      font-style: normal
+      font-size: 16px
+      line-height: 19px
+      color: $light
+      &--bold
+        font-weight: bold
+    &__item:not(:last-child)
+      margin-right: 36px
+
+.phone
+  font-style: normal
+  font-weight: 600
+  font-size: 18px
+  line-height: 25px
+  text-align: right
+  color: $secondary-color
+  align-content: flex-start
+  &-block
+    display: flex
+    flex-direction: column
+    &__item
+      display: flex
+  &-text
+    font-style: normal
+    font-weight: normal
+    font-size: 13px
+    line-height: 18px
+    text-align: center
+    color: #6A6C71
+
+.phone-icon
+  align-content: flex-end
+  margin-right: 6px
+
+.icon
+  width: 18px
+  height: 18px
+
+.menu-btn
+  display: none
+  width: 16px
+  height: 11px
+  border: none
+  align-items: center
+  justify-content: space-between
+  flex-direction: column
+  background-color: $section-color
+  cursor: pointer
+  &__line
+    width: 16px
+    height: 1px
+    background-color: $light
+
+.logo
+  &__link
+    cursor: pointer

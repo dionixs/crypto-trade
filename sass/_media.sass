@@ -1,0 +1,23 @@
+.container
+  max-width: 1110px
+  margin: auto
+
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .header
+    &__logo
+      max-width: 140px 
+
+@media (max-width: 992px)
+  .container
+    max-width: 700px
+  .navbar, .phone-block
+    display: none
+  .menu-btn
+    display: flex
+
+@media (max-width: 768px)
+  .container
+    max-width: 576px
+    width: 92%
