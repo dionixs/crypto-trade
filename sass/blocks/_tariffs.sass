@@ -1,0 +1,102 @@
+.tariffs
+  padding-top: 120px
+  padding-bottom: 120px
+  background-color: $section-color
+  &__title
+    text-align: center
+    margin-bottom: 15px
+  &__text
+    display: block
+    text-align: center
+    margin-bottom: 40px
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 150%
+    color: #B3B9C1
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-block
+    position: relative
+    display: flex
+    flex-direction: column
+    padding-top: 120px
+    padding-bottom: 120px
+    padding-right: 32px
+    padding-left: 32px
+    max-width: 350px
+    background: #0B0E11
+    border-radius: 10px
+    z-index: 1
+    &--main
+      padding: 20px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 28px
+      line-height: 120%
+      color: #434753
+      text-align: center
+    &__rate
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 150%
+      color: #555D67
+    &__name
+      margin-bottom: 17px
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 120%
+      color: #FAB40B
+  &-subtitle
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 150%
+    color: #B3B9C1
+  &-title
+    font-style: normal
+    font-weight: 500
+    font-size: 36px
+    line-height: 150%
+    color: #B3B9C1
+    margin-bottom: 9px
+  &__btn
+    max-width: 310px
+    padding: 22px 40px
+    margin-top: 10px
+    background: #FAB40B
+    box-shadow: 0px 15px 30px rgba(250, 180, 11, 0.2)
+    border-radius: 10px
+    border: none
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 24px
+    color: #000000
+
+
+@for $i from 1 to 4
+  .tariffs-block--item-#{$i}
+    &:before
+      content: ''
+      width: 200px
+      height: 200px
+      right: -24px
+      bottom: -64px
+      position: absolute
+      background-image: url("../img/tariffs/#{$i}.svg")
+      background-repeat: no-repeat
+      z-index: -99
+
+.tariffs
+  &-block
+    &--item
+      &-2
+        &:before
+          bottom: 0px
+          right: -94px
