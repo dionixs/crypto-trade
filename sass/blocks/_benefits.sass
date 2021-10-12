@@ -1,0 +1,66 @@
+.benefits
+  padding-top: 50px
+  padding-bottom: 100px
+  background: #0B0E11
+  &__title
+    text-align: center
+  &-wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 50px
+  &-block
+    position: relative
+    border-radius: 10px
+    background: #181A20
+    max-width: 540px
+    flex-basis: 50%
+    padding-top: 20px
+    padding-bottom: 44px
+    padding-left: 20px
+    padding-right: 20px
+    z-index: 1
+    overflow: hidden
+    &__wrap
+      display: flex
+      align-items: center
+    &__title
+      color: $light
+      font-style: normal
+      font-weight: bold
+      font-size: 28px
+      line-height: 120%
+      margin-left: 20px
+    &--mt
+      margin-top: 30px
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 150%
+    color: #B3B9C1
+
+@for $i from 1 to 5
+  .benefits-block--item-#{$i}
+    &:before
+      content: ''
+      width: 223px
+      height: 264px
+      position: absolute
+      bottom: -160px
+      right: -48px
+      background-image: url("../img/0#{$i}.svg")
+      background-repeat: no-repeat
+      z-index: -99
+
+.benefits
+  &-block
+    &--item-1
+      &:before
+        right: -68px
+
+.benefits
+  &-block
+    &--item-2
+      &:before
+        right: -54px
