@@ -2,13 +2,18 @@
   padding-top: 12px
   padding-bottom: 13px
   background-color: $section-color
+  position: fixed
+  width: 100%
+  top: 0
+  right: 0
+  left: 0
   &-wrapper
     display: flex
     align-items: center
     justify-content: space-between
   &__logo
-    max-width: 160px
-    height: 55px
+    width: auto
+    height: 100%
 
 .navbar
   &-menu
@@ -23,6 +28,9 @@
         font-weight: bold
     &__item:not(:last-child)
       margin-right: 36px
+  &__mobile
+    display: none
+    
 
 .phone
   font-style: normal
@@ -34,7 +42,7 @@
   align-content: flex-start
   &-block
     display: flex
-    flex-direction: column
+    align-items: center
     &__item
       display: flex
   &-text
@@ -57,3 +65,18 @@
   &__link
     cursor: pointer
 
+.menu-btn
+  display: none
+  margin-left: 25px
+  width: 16px
+  height: 20px
+  border: none
+  align-items: center
+  justify-content: space-between
+  flex-direction: column
+  background-color: #333333
+  cursor: pointer
+  &__line
+    width: 25px
+    height: 2px
+    background-color: $light

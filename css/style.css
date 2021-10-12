@@ -388,6 +388,11 @@ button {
   padding-top: 12px;
   padding-bottom: 13px;
   background-color: #181A20;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .header-wrapper {
@@ -403,8 +408,8 @@ button {
 }
 
 .header__logo {
-  max-width: 160px;
-  height: 55px;
+  width: auto;
+  height: 100%;
 }
 
 .navbar-menu {
@@ -429,6 +434,10 @@ button {
   margin-right: 36px;
 }
 
+.navbar__mobile {
+  display: none;
+}
+
 .phone {
   font-style: normal;
   font-weight: 600;
@@ -444,10 +453,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .phone-block__item {
@@ -480,7 +488,34 @@ button {
   cursor: pointer;
 }
 
+.menu-btn {
+  display: none;
+  margin-left: 25px;
+  width: 16px;
+  height: 20px;
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.menu-btn__line {
+  width: 25px;
+  height: 2px;
+  background-color: #FFFFFF;
+}
+
 .main {
+  margin-top: 64px;
   padding-top: 237px;
   padding-bottom: 168px;
   background-image: url(../img/main-bg.png);
@@ -579,31 +614,58 @@ button {
   .container {
     max-width: 960px;
   }
-  .header__logo {
-    max-width: 140px;
+  .main {
+    background-position: center;
   }
 }
 
 @media (max-width: 992px) {
   .container {
-    max-width: 700px;
+    max-width: 90%;
   }
-  .header-wrapper {
+  .navbar {
+    display: none;
+  }
+  .navbar__mobile {
+    padding-top: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    top: 78px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #181A20;
+  }
+  .navbar__mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-menu__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .logo {
-    margin-bottom: 20px;
+  .navbar-menu__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 15px;
   }
-  .navbar {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+  .navbar-menu__link {
+    font-size: 24px;
   }
-  .phone-block {
-    display: none;
+  .menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -611,6 +673,51 @@ button {
   .container {
     max-width: 576px;
     width: 92%;
+  }
+  .main {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+  .main-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main__subtitle {
+    text-align: center;
+    font-size: 20px;
+  }
+  .main__title {
+    font-size: 40px;
+    max-width: 100%;
+    text-align: center;
+  }
+  .main__btn-info {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 350px;
+  }
+  .main__btn-call {
+    max-width: 350px;
+  }
+  .main__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -627,6 +734,25 @@ button {
   .navbar-menu__item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 16px;
+  }
+  .phone-wrapper {
+    display: none;
+  }
+  .footer__text {
+    font-size: 14px;
+  }
+  .main__subtitle {
+    font-size: 16px;
+  }
+  .main__title {
+    width: 100%;
+    font-size: 32px;
+  }
+  .main__btn-info {
+    font-size: 18px;
+  }
+  .main__btn-call {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */

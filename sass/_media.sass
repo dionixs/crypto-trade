@@ -5,29 +5,71 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-  .header
-    &__logo
-      max-width: 140px
+
+  .main
+    background-position: center
 
 @media (max-width: 992px)
   .container
-    max-width: 700px
+    max-width: 90%
+    // max-width: 700px
 
-  .header
-    &-wrapper
-      flex-direction: column
-  .logo
-    margin-bottom: 20px
   .navbar
-    order: 3
-  .phone
-    &-block
-      display: none
+    display: none
+    &__mobile
+      padding-top: 40px
+      justify-content: center
+      position: fixed
+      top: 78px
+      right: 0
+      left: 0
+      bottom: 0
+      background-color: $section-color
+      &--visible
+        display: flex
+    &-menu
+      &__mobile
+        display: flex
+        flex-direction: column
+        align-items: center
+      &__item:not(:last-child)
+        margin-right: 0
+        margin-bottom: 15px
+      &__link
+        font-size: 24px
+
+  .menu-btn
+    display: flex
 
 @media (max-width: 768px)
   .container
     max-width: 576px
     width: 92%
+
+  .main
+    padding-top: 80px
+    padding-bottom: 90px
+    &-wrapper
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__subtitle
+      text-align: center
+      font-size: 20px
+    &__title
+      font-size: 40px
+      max-width: 100%
+      text-align: center
+    &__btn-info
+      margin-right: 0
+      margin-bottom: 20px
+      max-width: 350px
+    &__btn-call
+      max-width: 350px
+    &__buttons
+      display: flex
+      flex-direction: column
 
 @media (max-width: 576px)
   .navbar
@@ -37,3 +79,22 @@
       &__item:not(:last-child)
         margin-right: 0
         margin-bottom: 16px
+  .phone
+    &-wrapper
+      display: none
+
+  .footer
+    &__text
+      font-size: 14px
+
+  .main
+    &__subtitle
+      font-size: 16px
+    &__title
+      width: 100%
+      font-size: 32px
+    &__btn
+      &-info
+        font-size: 18px
+      &-call
+        font-size: 18px
