@@ -1,0 +1,40 @@
+.contents
+  padding-top: 80px
+  padding-bottom: 90px
+  background: #0B0E11
+  &-wrapper
+    display: flex
+    align-items: center
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 120%
+    color: $light
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 120%
+    color: #B3B9C1
+  &__item
+    position: relative
+  &-img
+    max-width: 650px
+    height: auto
+  &__item:not(:last-child)
+    margin-bottom: 20px
+
+@for $i from 1 to 7
+  .contents__item--#{$i}
+    &:after
+      content: "#{$i}"
+      position: absolute
+      top: -10px
+      left: -45px
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 120%
+      color: #434753
+
