@@ -29,13 +29,12 @@
     &-wrapper
       flex-direction: column
     &-block
-      display: none
-      // max-width: initial
-      // width: 80%
+      max-width: initial
+      width: 520px
       &--main
         display: flex
-        // margin-top: 30px
-        // margin-bottom: 30px
+        margin-top: 30px
+        margin-bottom: 30px
 
 @media (max-width: 992px)
   .container
@@ -138,8 +137,8 @@
     padding-bottom: 50px
 
   .tariffs
-    // padding-top: 50px
-    // padding-bottom: 60px
+    padding-top: 50px
+    padding-bottom: 60px
 
 @media (max-width: 576px)
   .navbar
@@ -191,6 +190,22 @@
       font-size: 14px
       text-align: center
 
-  // .tariffs
-  //   &-block
-  //     width: 350px
+  .tariffs
+    padding-bottom: 35px
+    &-block
+      display: none
+      &--main
+        display: flex
+        max-width: 280px
+      &__name
+        font-size: 32px
+    &__btn
+      max-width: 210px
+      font-size: 16px
+      padding: 20px
+    &__text
+      margin-bottom: 20px
+    &-title
+      font-size: 30px
+
+  

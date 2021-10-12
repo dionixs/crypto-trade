@@ -943,8 +943,9 @@ button {
 }
 
 .tariffs-block--item-2:before {
+  width: 122px;
   bottom: 0px;
-  right: -94px;
+  right: -17px;
 }
 
 .footer {
@@ -1010,12 +1011,15 @@ button {
             flex-direction: column;
   }
   .tariffs-block {
-    display: none;
+    max-width: initial;
+    width: 520px;
   }
   .tariffs-block--main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1165,6 +1169,10 @@ button {
   .benefits {
     padding-bottom: 50px;
   }
+  .tariffs {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1226,6 +1234,32 @@ button {
   .benefits__text {
     font-size: 14px;
     text-align: center;
+  }
+  .tariffs {
+    padding-bottom: 35px;
+  }
+  .tariffs-block {
+    display: none;
+  }
+  .tariffs-block--main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 280px;
+  }
+  .tariffs-block__name {
+    font-size: 32px;
+  }
+  .tariffs__btn {
+    max-width: 210px;
+    font-size: 16px;
+    padding: 20px;
+  }
+  .tariffs__text {
+    margin-bottom: 20px;
+  }
+  .tariffs-title {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
