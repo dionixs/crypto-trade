@@ -1,0 +1,43 @@
+.questions
+  padding-bottom: 120px
+  background-color: $section-color
+  &__title
+    text-align: center
+    margin-bottom: 50px
+  &-block
+    position: relative
+    padding-top: 25px
+    padding-bottom: 25px
+    &:not(:last-child)
+      border-bottom: 1px solid #D6D6D6
+    &__title
+      display: flex
+      align-items: center
+      cursor: pointer
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 28px
+      color: $light
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 21px
+      display: flex
+      align-items: center
+      color: #B3B9C1
+    &__ul
+      display: none
+      padding-top: 17px
+      &--visible
+        display: block
+
+.dropdown-arrow
+  width: 24px
+  height: 24px
+  position: absolute
+  top: 30px
+  right: 20px
+  &--rotate
+    transform: rotate(180deg)
