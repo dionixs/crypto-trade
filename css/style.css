@@ -1340,6 +1340,87 @@ button {
           transform: rotate(180deg);
 }
 
+.contacts {
+  padding-top: 60px;
+  padding-bottom: 28px;
+  background: #0B0E11;
+}
+
+.contacts__title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.contacts-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__btn {
+  display: block;
+  max-width: 310px;
+  font-size: 18px;
+  color: #000;
+  background: #FAB40B;
+  -webkit-box-shadow: 0px 15px 30px rgba(250, 180, 11, 0.2);
+          box-shadow: 0px 15px 30px rgba(250, 180, 11, 0.2);
+  border-radius: 10px;
+  padding: 20px 26px;
+  margin-top: 44px;
+}
+
+.contacts__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 30px;
+}
+
+.contacts__map {
+  width: 635px;
+}
+
+.contacts__name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #B3B9C1;
+  margin-right: 90px;
+}
+
+.contacts__phone, .contacts__email, .contacts__adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts__item {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.contacts__block {
+  margin-bottom: 10px;
+}
+
+.contacts__email {
+  margin-bottom: 10px;
+}
+
 .footer {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -1445,6 +1526,30 @@ button {
   .reviews-text {
     max-width: 350px;
     margin-top: 20px;
+  }
+  .contacts-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts__phone, .contacts__email, .contacts__adress {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacts__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
+  }
+  .contacts__map {
+    margin-top: 40px;
+    width: 100%;
   }
 }
 
@@ -1807,6 +1912,19 @@ button {
   }
   .reviews-btn-next {
     display: none;
+  }
+  .contacts {
+    padding-top: 37px;
+  }
+  .contacts__item, .contacts__name {
+    font-size: 16px;
+  }
+  .contacts__name {
+    margin-right: 30px;
+  }
+  .contacts__btn {
+    max-width: 260px;
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
