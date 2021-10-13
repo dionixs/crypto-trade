@@ -515,6 +515,19 @@ button {
   background-color: #FFFFFF;
 }
 
+.call-btn:hover {
+  background: #FAB40B;
+  color: #000000;
+}
+
+.tariffs__btn:hover, .offer__btn:hover {
+  color: #FFFFFF;
+}
+
+.contacts__btn:hover {
+  color: #FFFFFF;
+}
+
 .main {
   margin-top: 64px;
   padding-top: 237px;
