@@ -1064,6 +1064,99 @@ button {
   color: #434753;
 }
 
+.request {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #181A20;
+}
+
+.request-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.offer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 95px;
+  padding-left: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 920px;
+  background-image: url(../img/offer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 52%;
+  border-radius: 20px;
+}
+
+.offer__title {
+  display: block;
+  max-width: 438px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.offer__text {
+  max-width: 418px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: #B3B9C1;
+}
+
+.offer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 37px;
+}
+
+.offer__form {
+  max-width: 255px;
+}
+
+.offer__input {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.offer__btn {
+  width: 100%;
+  padding: 20px 34px;
+  border: none;
+  outline: none;
+  background: #FAB40B;
+  -webkit-box-shadow: 0px 15px 30px rgba(250, 180, 11, 0.2);
+          box-shadow: 0px 15px 30px rgba(250, 180, 11, 0.2);
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
 .footer {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -1151,6 +1244,9 @@ button {
     max-width: 400px;
     height: auto;
   }
+  .offer {
+    max-width: initial;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1214,6 +1310,21 @@ button {
   .about__text {
     font-size: 16px;
     margin-left: 20px;
+  }
+  .offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .offer-text {
+    margin-right: 0;
+  }
+  .offer__text {
+    margin-bottom: 35px;
   }
 }
 
@@ -1302,6 +1413,16 @@ button {
   .tariffs {
     padding-top: 50px;
     padding-bottom: 60px;
+  }
+  .request {
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
+  .offer {
+    padding: 30px 50px;
+  }
+  .offer__title {
+    font-size: 32px;
   }
 }
 
@@ -1432,6 +1553,23 @@ button {
   }
   .contents__item--6:after {
     display: none;
+  }
+  .offer {
+    padding: 30px 20px;
+    width: 100%;
+  }
+  .offer__form {
+    max-width: 80%;
+  }
+  .offer__title {
+    font-size: 24px;
+  }
+  .offer__text {
+    font-size: 14px;
+  }
+  .offer__btn {
+    padding: 20px 14px;
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */

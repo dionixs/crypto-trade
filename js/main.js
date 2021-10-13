@@ -4,3 +4,4 @@ menuBtn.addEventListener("click", function () {
     .querySelector(".navbar-mobile")
     .classList.toggle("navbar-mobile--visible");
 });
+

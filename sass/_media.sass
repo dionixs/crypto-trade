@@ -46,6 +46,9 @@
       max-width: 400px
       height: auto
 
+  .offer
+    max-width: initial
+
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -90,6 +93,14 @@
     &__text
       font-size: 16px
       margin-left: 20px
+
+  .offer
+    flex-direction: column
+    align-items: center
+    &-text
+      margin-right: 0
+    &__text
+      margin-bottom: 35px
 
 @media (max-width: 768px)
   .container
@@ -149,6 +160,15 @@
   .tariffs
     padding-top: 50px
     padding-bottom: 60px
+
+  .request
+    padding-top: 60px
+    padding-bottom: 65px
+
+  .offer
+    padding: 30px 50px
+    &__title
+      font-size: 32px
 
 @media (max-width: 576px)
   .navbar
@@ -228,8 +248,11 @@
       display: flex
       padding-left: 15px !important
       flex-direction: column
+    &__title
+      // margin-top: 20px
     &__text
       font-size: 14px
+      // margin-bottom: 20px
     &__item:not(:last-child)
       margin-bottom: 40px
 
@@ -237,3 +260,18 @@
     .contents__item--#{$i}
       &:after
         display: none
+        // top: -50px
+        // left: 0px
+
+  .offer
+    padding: 30px 20px
+    width: 100%
+    &__form
+      max-width: 80%
+    &__title
+      font-size: 24px
+    &__text
+      font-size: 14px
+    &__btn
+      padding: 20px 14px
+      font-size: 16px
