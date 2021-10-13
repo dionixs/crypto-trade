@@ -1,0 +1,72 @@
+.reviews
+  background-color: $section-color
+  padding-bottom: 120px
+  &-wrapper
+    position: relative
+  &__title
+    text-align: center
+    margin-bottom: 50px
+  &__slide
+    display: flex
+    flex-direction: column
+    padding: 15px 20px 0 20px
+    background: #0B0E11
+    border-radius: 10px
+    padding-bottom: 30px
+    width: 280px
+    min-height: 300px
+  &-info
+    display: flex
+    align-items: center
+    &__avatar
+      width: 49px
+      height: 49px
+      object-fit: cover
+      border-radius: 50%
+      margin-right: 11px
+      margin-bottom: 10px
+    &__wrap
+      display: flex
+      flex-direction: column
+    &__name
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 120%
+      color: $light
+  &-text
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 130%
+    color: #B3B9C1
+    max-width: 250px
+  &-btn
+    position: absolute
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    transform: translateY(-50%)
+    z-index: 99
+    width: 45px
+    height: 45px
+    border: none
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 45px
+    background-color: transparent
+    &-prev
+      left: 0px
+      background-image: url(../img/left.svg)
+    &-next
+      right: 0px
+      background-image: url(../img/right.svg)
+
+.swiper
+  width: 920px
+  position: relative
+  height: 100%
+
+.star-icon
+  width: 18px
+  height: 18px
